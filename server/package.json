@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
-    "fix": "gts fix"
+    "fix": "gts fix",
+    "generate-graphql-schema": "ts-node bin/generate-graphql-schema.ts",
+    "codegen": "npm run generate-graphql-schema"
   },
   "dependencies": {
     "@types/express": "^4.17.9",
