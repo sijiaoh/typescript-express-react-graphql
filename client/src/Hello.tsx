@@ -18,7 +18,6 @@ export const Hello = () => {
   return (
     <div className={Hello.name}>
       <div>
-        server
         <div>str={data!.hello.str}</div>
         <div>date={data!.hello.date}</div>
       </div>
