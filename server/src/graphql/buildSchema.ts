@@ -1,7 +1,7 @@
 import {resolvers} from './resolvers';
-import {buildSchemaSync, NonEmptyArray} from 'type-graphql';
+import {buildSchemaSync, NonEmptyArray, BuildSchemaOptions} from 'type-graphql';
 
-export const buildSchema = (options: {emitSchemaFile?: string} = {}) => {
+export const buildSchema = (options: Partial<BuildSchemaOptions> = {}) => {
   return buildSchemaSync({
     resolvers: (Object.values(resolvers) as unknown) as NonEmptyArray<Function>,
     ...options,
